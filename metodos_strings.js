@@ -140,7 +140,7 @@ console.log(cadenaDeTexto.replace(/hola/gi, 'Adios'));
 //convertir string
 console.log('--a string--');
 
-
+//funcion String
 console.log(String(34234));
 
 const number = 21
