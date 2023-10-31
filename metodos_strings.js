@@ -84,7 +84,7 @@ console.log(cadenaDeTexto.at(-1));//o
 console.log(cadenaDeTexto.at(-4));//e
 
 //split(separador) Me convierte un string en un array. El split recibe nada mas y nada menos que un separador
-
+console.log('--split--');
 const arrayDeString = cadenaDeTexto.split(' ')
 console.log(arrayDeString);
 const newString = 'hola-soy-Carlos'
@@ -92,5 +92,32 @@ const arrayString2 = newString.split('-')
 console.log(arrayString2[1]);
 
 //subString(indiceInicial, indiceFinal) Nos retorna una subCadena. 
-console.log(cadenaDeTexto.substring(5, 19));
-console.log(cadenaDeTexto.substring(1, 4));
+console.log('--subtring--');
+console.log(cadenaDeTexto.substring(5, 19));//soy una cadena
+console.log(cadenaDeTexto.substring(1, 4));//ola
+console.log(cadenaDeTexto.substring(1, -1)); //H
+
+//slice(indiceInicial, indiceFinal) Retorna una subcadena de la cadena. A diferencia del substring, el slice acepta numeros negativos. El ultimo caracter no es considerado.
+console.log('--slice--');
+console.log(cadenaDeTexto.slice(5, 19)); //soy una cadena
+console.log(cadenaDeTexto.slice(1, 4)); //ola
+console.log(cadenaDeTexto.slice(1, -1)); //ola soy una cadena de text
+console.log(cadenaDeTexto.slice(1)); //ola soy una cadena de texto
+
+
+//trim() Retorna un string. PERO, sin los espacios en blanco, ya sea al comienzo o al final. Se utiliza para descartar los espacios.
+console.log('--trim--');
+// '    hola'
+// 'hola'
+// 'hola     '
+
+console.log('        hola');
+console.log('        hola'.trimStart());
+console.log('hola            '.trimEnd());
+console.log('               hola            '.trim());
+
+
+//repeticion - repeat(n) - Retorna una cadena repetida n veces
+console.log('--repeat--');
+console.log('hola'.repeat(3));
+
