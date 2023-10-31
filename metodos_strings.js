@@ -121,3 +121,28 @@ console.log('               hola            '.trim());
 console.log('--repeat--');
 console.log('hola'.repeat(3));
 
+
+//replace(valor, nuevoValor) El replace nos permite buscar y remplazar. Buscara con el valor que le indique y lo remplazara por el nuevo valor. Nos retornara un nuevo string con las palbras remplazadas
+console.log('--replace--');
+console.log(cadenaDeTexto);
+console.log(cadenaDeTexto.replace('Hola', 'Adios'));
+
+//originalmente: 'Hola soy una cadena de texto'
+//finalmente, luego de aplicar el metodo: 'Adios soy una cadena de texto'
+
+//Expresiones regulares
+//g - tiene en cuenta todas las apariciones - global
+//i - ignorara mayusculas y minusculas
+
+console.log('--expresiones regulares --');
+console.log(cadenaDeTexto.replace(/hola/gi, 'Adios'));
+
+//convertir string
+console.log('--a string--');
+
+
+console.log(String(34234));
+
+const number = 21
+console.log(number.toString());
+
